@@ -29,10 +29,10 @@ const AboutBlurb = () => {
           <div className="content">
             <h3>Who am I?</h3>
             <p>
-                Based in SoCal, I am an avid programmer and cat enthusiast who enjoys Web and App Development. My skills include: (Frontend) HTML, CSS, SCSS, JS, React, Swift | (Backend) NodeJS, Express, Firebase.
+                Based in SoCal, I am an avid programmer and cat lover who enjoys Web and App Development. My skills include: (Frontend) HTML, CSS, SCSS, JS, React, Swift, Java | (Backend) Node.js, Express, Firebase.
             </p>
             <div className="btn-row">
-              <Link to="/work">View My Work</Link>
+              <Link to="/work">Contact me</Link>
             </div>
           </div>
           <div className="images">

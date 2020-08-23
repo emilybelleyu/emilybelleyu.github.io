@@ -114,6 +114,34 @@ header {
           letter-spacing: 2px;
         }
       }
+      .main-body {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        line-height: 30px;
+        color: $darkgrey;
+        position: absolute;
+        width: 60%;
+        left: 18%;
+        top: 50%;
+        transform: translateY(-100%);
+        text-align: start;
+        z-index: 9;
+      }
+      .btn-row {
+        a {
+          font-weight: 500;
+          position: absolute;
+          width: 100%;
+          left: 18%;
+          top: 50%;
+          transform: translateY(100%);
+          font-size: 17px;
+          line-height: 25.5px;
+          letter-spacing: 1px;
+          color: $salmon;
+        }
+      }
       .main-image {
         width: 536px;
         margin: 0 auto;
@@ -121,7 +149,6 @@ header {
           width: 436px;
         }
       }
-
       .side-image {
         width: 260px;
         position: absolute;
@@ -188,6 +215,7 @@ header {
           width: 40%;
         }
         h3 {
+          color: $black;
           font-weight: 700;
         //   text-transform: lowercase;
           font-size: 38px;
@@ -203,11 +231,11 @@ header {
         }
         .btn-row {
           a {
-            font-weight: 700;
-            font-size: 0.875rem;
-            letter-spacing: 1.5px;
-            color: $peach;
-            text-transform: lowercase;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 25.5px;
+            letter-spacing: 1px;
+            color: $salmon;
           }
         }
       }
@@ -257,6 +285,31 @@ header {
         z-index: 3;
         background: $lightpink;
         mix-blend-mode: soft-light;
+      }
+    }
+  }
+
+  .footer {
+    background: $off-white;
+    border-top: 0.5px solid lightgrey;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    .inner {
+      margin-top: 40px;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 1px;
+      color: $darkgrey;
+      background: $off-white;
+      padding: 0 120px;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      .socials {
+        a {
+          margin: 0 8px;
+        }
       }
     }
   }
