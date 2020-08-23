@@ -42,6 +42,7 @@ const Banner = () => {
             <span>Scroll down</span>
         </div>
       </div>
+      <div className="fixed-misc">Full Stack Developer and Cat Lover</div>
     </div>
   )
 }

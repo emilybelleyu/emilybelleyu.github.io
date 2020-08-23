@@ -19,7 +19,9 @@ html,
 body {
     font-family: $font;
     font-size: 16px; 
-    background: $off-white;
+    background: lavenderblush;
+    padding: 0;
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -76,6 +78,9 @@ header {
             &:last-child {
               margin-right: 0px;
             }
+          }
+          a:hover {
+            color:$peach;
           }
         }
       }
@@ -144,9 +149,114 @@ header {
         font-weight: 700;
         font-size: 0.875rem;
         letter-spacing: 1.5px;
-        color: $black;
+        color: $pink;
         text-transform: lowercase;
         position: absolute;
         bottom: 48px;
       }
+
+      .fixed-misc {
+        position: fixed;
+        top: 50%;
+        right: -48px;
+        transform: rotate(-90deg);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        letter-spacing: 1.5px;
+        color: $peach;
+        // mix-blend-mode: luminosity;
+        z-index: 8;
+        @media (max-width: 1440px) {
+          right: -112px;
+        }
+      }
 }
+
+//About blurb
+.about-blurb {
+    padding: 48px 0;
+    background: $off-white;
+    position: relative;
+    .inner-blurb {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .content {
+        width: 33%;
+        @media (max-width: 1440px) {
+          width: 40%;
+        }
+        h3 {
+          font-weight: 700;
+        //   text-transform: lowercase;
+          font-size: 38px;
+          letter-spacing: 1.5px;
+          margin: 0;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 2rem;
+          font-weight: 300;
+          margin: 50px 0 32px;
+          color: $darkgrey;
+        }
+        .btn-row {
+          a {
+            font-weight: 700;
+            font-size: 0.875rem;
+            letter-spacing: 1.5px;
+            color: $peach;
+            text-transform: lowercase;
+          }
+        }
+      }
+      .images {
+        width: 50%;
+        height: 1000px;
+        position: relative;
+        z-index: 7;
+        @media (max-width: 1440px) {
+          height: 600px;
+        }
+        .top-right {
+          position: absolute;
+          width: 460px;
+          top: 0;
+          right: 0;
+          z-index: 4;
+          @media (max-width: 1440px) {
+            width: 360px;
+          }
+        }
+        .bottom-left {
+          position: absolute;
+          width: 410px;
+          left: 0;
+          bottom: 0;
+          @media (max-width: 1440px) {
+            width: 300px;
+          }
+        }
+      }
+    }
+    .black-box {
+      order: 0;
+      background: $lightpink;
+      height: 418px;
+      width: 836px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-47%);
+      @media (max-width: 1440px) {
+        width: 636px;
+        height: 390px;
+      }
+      &.overlay {
+        z-index: 3;
+        background: $lightpink;
+        mix-blend-mode: soft-light;
+      }
+    }
+  }
