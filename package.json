@@ -23,6 +23,7 @@
     "smooth-scrollbar": "^8.5.2"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -40,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/emilybelleyu/emilybelleyu.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
