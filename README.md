@@ -1,5 +1,5 @@
 # Emily Yu's Portfolio
-[Em's Portfolio](https://emilybelleyu.github.io/Portfolio/) is my personal website.
+Em's Portfolio is my personal website.
 
 ## Tools
 - Used [Gatsby.js][gatsby] for managing site content and templating.
