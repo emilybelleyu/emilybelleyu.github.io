@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="row">
           <div className="main-text">Hi! I'm Emily Yu.</div>
           <div className="main-body">
-            Welcome to my personal website. In this portfolio, I showcase the projects I have made and provide background about myself. Hope you enjoy!
+            Welcome to my personal website. As a programmer, my mission is to create products that inform, support, or entertain others.
           </div>
           <div className="btn-row">
             <Link to="/work">View my work</Link>

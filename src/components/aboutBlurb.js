@@ -13,7 +13,7 @@ const AboutBlurb = () => {
           }
         }
       }
-      me: file(relativePath: { eq: "me.png" }) {
+      me: file(relativePath: { eq: "em.png" }) {
         childImageSharp {
           fluid(maxWidth: 300, quality: 100) {
             ...GatsbyImageSharpFluid
