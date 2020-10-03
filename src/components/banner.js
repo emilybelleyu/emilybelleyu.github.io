@@ -6,9 +6,9 @@ const Banner = () => {
     <div className="banner">
       <div className="container">
         <div className="row">
-          <div className="main-text">Hi! I'm Emily Yu.</div>
+          <div className="main-text">Hi! I'm Emily.</div>
           <div className="main-body">
-            Welcome to my personal website. As a programmer, my mission is to create products that inform, support, or entertain others.
+            Welcome to my personal website. As a programmer, I aim to create products that inform, support, or entertain others.
           </div>
           <div className="btn-row">
             <Link to="/work">View my work</Link>

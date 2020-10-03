@@ -32,16 +32,16 @@ const Footer = () => {
         <div className="inner">
           <span>© 2020 Emily Yu</span>
           <div className="socials">
-            <a href="/">
+            <a href="https://www.linkedin.com/in/emily-yu-074a5a1b0" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} width="40" height="40" alt="Linkedin" />
             </a>
-            <a href="/">
+            <a href="https://www.instagram.com/emibelleyu" target="_blank" rel="noopener noreferrer">
               <img src={instagram} width="40" height="40" alt="Instagram" />
             </a>
-            <a href="/">
+            <a href="https://github.com/emilybelleyu" target="_blank" rel="noopener noreferrer">
               <img src={github} width="40" height="40" alt="Github" />
             </a>
-            <a href="/">
+            <a href="https://www.facebook.com/emily.yu.5667" target="_blank" rel="noopener noreferrer">
               <img src={facebook} width="40" height="40" alt="Facebook" />
             </a>
           </div>
