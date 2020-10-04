@@ -27,7 +27,7 @@ const AboutBlurb = () => {
       <div className="container">
         <div className="inner-blurb">
           <div className="content">
-            <h3>Who am I?</h3>
+            <h3>About Me</h3>
             <p>
                 Based in SoCal, I am an avid programmer and cat lover who enjoys Web and App Development. My skills include: (Frontend) HTML, CSS, SCSS, JS, React, Swift, Java | (Backend) Node.js, Express, Firebase.
             </p>
@@ -39,14 +39,14 @@ const AboutBlurb = () => {
             <div className="top-right">
               <Img fluid={data.me.childImageSharp.fluid} />
             </div>
-            <div className="bottom-left">
+            {/* <div className="bottom-left">
               <Img fluid={data.yuki.childImageSharp.fluid} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="black-box"></div>
-      <div className="black-box overlay"></div>
+      {/* <div className="black-box"></div>
+      <div className="black-box overlay"></div> */}
     </div>
   )
 }

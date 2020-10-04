@@ -3,11 +3,11 @@ import '../styles/styles.scss'
 import { Helmet } from "react-helmet"
 
 //Import Components
-import Header from "../components/header"
+import Layout from "../components/layout"
+// import Header from "../components/header"
 import Banner from "../components/banner"
 import AboutBlurb from "../components/aboutBlurb"
-// import VideoSection from "../components/videoSection"
-import Footer from "../components/footer"
+// import Footer from "../components/footer"
 
 const IndexPage = () => (
   <div>
@@ -17,11 +17,12 @@ const IndexPage = () => (
       <title>Emily Yu</title>
       <link rel="canonical" href="https://emilybelleyu.github.io/Portfolio/" />
     </Helmet>
-    <Header />
+    <Layout>
+    {/* <Header /> */}
     <Banner />
     <AboutBlurb />
-    {/* <VideoSection /> */}
-    <Footer />
+    {/* <Footer /> */}
+    </Layout>
   </div>
 )
 
