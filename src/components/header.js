@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import { FaAlignRight } from "react-icons/fa"
+import { GiHamburgerMenu } from "react-icons/gi"
 //Import Images
 import daisy from "../images/daisy.png"
 
@@ -13,7 +13,7 @@ const Header = ({ toggleSidebar }) => (
               <Link to="/">Emily Yu</Link>
             </div>
             <button type="button" className="toggle-btn" onClick={toggleSidebar}>
-              <FaAlignRight></FaAlignRight>
+              <GiHamburgerMenu></GiHamburgerMenu>
             </button>
 
         <div className="navigation">
