@@ -30,7 +30,7 @@ const Footer = () => {
       </div> */}
       <div className="footer">
         <div className="inner">
-          <span>© 2020 Emily Yu</span>
+          <span>© {new Date().getFullYear()} Emily Yu</span>
           <div className="socials">
             <a href="https://www.linkedin.com/in/emily-yu-074a5a1b0" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} height="40" alt="Linkedin" />

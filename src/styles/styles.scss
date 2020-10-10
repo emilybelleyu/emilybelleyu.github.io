@@ -15,11 +15,9 @@ $lightpink: #FFE6EE;
 $pink: #FFDBE9;
 $peach: #FFB6C1;
 
-/*
-========================= 
-Global Styles and Classes
-=========================
-*/
+
+
+// Global Styles and Classes
 
 *,
 ::after,
@@ -31,6 +29,7 @@ Global Styles and Classes
 
 html, 
 body {
+    scroll-behavior: smooth;
     font-family: $font;
     background: lavenderblush;
     padding: 0;
@@ -63,9 +62,10 @@ header {
     background: $off-white;
     height: 80px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0; 
+    right: 0;
     z-index: 200;
     .inner-header {
       margin-left: 5%;
@@ -82,15 +82,17 @@ header {
         }
       }
       .toggle-btn {
+        position: absolute;
         font-size: 2rem;
-        margin-left: 68%;
+        right: 4.75%;
+        top: 30%;
         background: transparent;
         border-color: transparent;
         outline: none;
         color: $black;
         cursor: pointer;
         transition: all 0.3s linear;
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
           display: none;
         }
       }
@@ -99,15 +101,16 @@ header {
       }
 
       .navigation {
-        margin-left: 60%;
+        position: absolute;
+        right: 7%;
         nav {
           a {
             margin: 0 20px;
-            font-weight: 600;
+            font-weight: 450;
             text-decoration: none;
-            letter-spacing: 1.75px;
+            letter-spacing: 1px;
             text-transform: lowercase;
-            font-size: 0.75rem;
+            font-size: 0.9rem;
             color: $black;
             &:last-child {
               margin-right: 0px;
@@ -117,9 +120,126 @@ header {
             color:$peach;
           }
         }
+        @media screen and (max-width: 992px) {
+          display: none;
+        }
       }
     }
   }
+
+  //Sidebar
+  .sidebar {
+    background: $off-white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: all 0.3s linear;
+    transform: translateX(-100%);
+  }
+  .show-sidebar {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .sidebar-links li {
+    opacity: 0;
+  }
+  .sidebar-links li a {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    color: $black;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    transition: all 0.3s linear;
+    border-radius: 0.25rem;
+  }
+  .sidebar-links li a:hover {
+    background: transparent;
+    color: $pink;
+  }
+  .close-btn {
+    position: absolute;
+    right: 4.75%;
+    top: 2.75%;
+    font-size: 2.5rem;
+    outline: none;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 992px) {
+    .sidebar {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  //Sidebar Animation
+  .sidebar-links li {
+    animation: slideRight 0.5s ease-in-out 0.3s forwards;
+  }
+  .sidebar-links li:nth-of-type(1) {
+    animation-delay: 0.25s;
+  }
+  .sidebar-links li:nth-of-type(2) {
+    animation-delay: 0.5s;
+  }
+  .sidebar-links li:nth-of-type(3) {
+    animation-delay: 0.75s;
+  }
+  .sidebar-links li:nth-of-type(4) {
+    animation-delay: 1s;
+  }
+  .sidebar-links li:nth-of-type(5) {
+    animation-delay: 1.25s;
+  }
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .sidebar-icons li {
+    opacity: 0;
+    animation: slideUp 0.5s ease-in-out 0.3s forwards;
+  }
+  .sidebar-icons li:nth-of-type(1) {
+    animation-delay: 0.25s;
+  }
+  .sidebar-icons li:nth-of-type(2) {
+    animation-delay: 0.5s;
+  }
+  .sidebar-icons li:nth-of-type(3) {
+    animation-delay: 0.75s;
+  }
+  // .sidebar-icons li:nth-of-type(4) {
+  //   animation-delay: 1s;
+  // }
+  // .sidebar-icons li:nth-of-type(5) {
+  //   animation-delay: 1.25s;
+  // }
+  @keyframes slideUp {
+    0% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 
   //Banner
 .banner {
@@ -130,12 +250,11 @@ header {
       height: 100%;
       display: grid;
       align-items: center;
-      @media (max-width: 768px) {
-        padding-top: 20%;
-      }
+      
       .main-text {
-        margin-top: 15%;
-        margin-left: 20%;
+        position: absolute;
+        top: 32%;
+        left: 20%;
         font-size: 7vmin;
         letter-spacing: 1px;
         font-weight: 700;
@@ -144,9 +263,10 @@ header {
         z-index: 9;
       }
       .main-body {
-        margin-top: 1%;
-        margin-left: 20%;
-        margin-right: 20%;
+        position: absolute;
+        top: 42%;
+        left: 20%;
+        right: 20%;
         font-size: 2.6vmin;
         letter-spacing: 1px;
         font-weight: 400;
@@ -155,18 +275,24 @@ header {
         z-index: 9;
       }
       .btn-row {
-        margin-top: 1%;
+        position: absolute;
+        top: 53%;
+        left: 20%;
         a {
           font-weight: 500;
-          margin-left: 20%;
           font-size: 2.3vmin;
           line-height: 25.5px;
           letter-spacing: 1px;
           color: $salmon;
         }
+        @media screen and (max-width: 910px) {
+          top: 57%;
+        }
       }
     }
     .scroll {
+        position: absolute;
+        top: 90%;
         left: 10%;
         font-weight: 700;
         font-size: 2vmin;
@@ -174,12 +300,12 @@ header {
         color: $pink;
         text-transform: lowercase;
         position: absolute;
-        bottom: 48px;
+        // bottom: 48px;
       }
 
       .fixed-misc {
-        margin-top: -2%;
         position: fixed;
+        top: 50%;
         right: -120px;
         transform: rotate(-90deg);
         font-weight: 700;
@@ -229,8 +355,7 @@ header {
         }
       }
       .images {
-        // width: 50%;
-        // height: 1000px;
+        margin-top: 10%;
         margin-left: 12%;
         position: relative;
         z-index: 7;
@@ -246,7 +371,11 @@ header {
         }
         .top-right img{
           border-radius: 20px;
+          // transition: all 0.5s cubic-bezier(0.43, 0.13, 0.23, 0.96) !important;
         }
+        // .top-right img:hover{
+        //   transform: scale(1.1);
+        // }
         .bottom-left {
           position: absolute;
           width: 20vw;
@@ -254,20 +383,6 @@ header {
           bottom: 0;
         }
       }
-    // .black-box {
-    //   order: 0;
-    //   background: $lightpink;
-    //   width: 80vmin;
-    //   height: 52vmin;
-    //   position: absolute;
-    //   right: 0;
-    //   top: 50%;
-    //   transform: translateY(-47%);
-    //   &.overlay {
-    //     z-index: 3;
-    //     background: $lightpink;
-    //     mix-blend-mode: soft-light;
-    //   }
     }
   }
 
