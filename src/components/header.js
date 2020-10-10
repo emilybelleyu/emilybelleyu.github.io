@@ -3,6 +3,7 @@ import React from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 //Import Images
 import daisy from "../images/daisy.png"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = ({ toggleSidebar }) => (
   <header> 
@@ -19,6 +20,8 @@ const Header = ({ toggleSidebar }) => (
         <div className="navigation">
           <nav>
             <Link to="/">Home</Link>
+            <button id="abt-btn" onClick={() => scrollTo('#about')}>About</button>
+            {/* <Link to="/#about">About</Link> */}
             <Link to="/projects">Projects</Link>
             <Link to="/contact">Contact</Link>
           </nav>

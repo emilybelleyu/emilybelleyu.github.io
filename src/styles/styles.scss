@@ -36,26 +36,11 @@ body {
     margin: 0;
     overflow-x: hidden;
     width: 100%;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
 }
-
-// .container { maybe delete someday
-//   min-height: 100%;
-//     width: 1640px; 
-//     min-width: 1640px;
-//     margin: 0 auto; 
-//     @media(max-width: 1440px){
-//         width: 1280px; 
-//         min-width: 1280px;
-//     }
-//     @media(max-width: 1280px){
-//         width: 976px; 
-//         min-width: 976px;
-//     }
-//     @media(max-width: 976px){
-//         width: 768px; 
-//         min-width: 768px;
-//     }
-// }
 
 //Header
 header {
@@ -75,10 +60,10 @@ header {
       .logo {
         a {
           margin: 0 4px;
-          font-weight: 600;
+          font-weight: 450;
           text-decoration: none;
-          letter-spacing: 1.5px;
-          color: $black;
+          letter-spacing: 1px;
+          color: $peach
         }
       }
       .toggle-btn {
@@ -106,10 +91,10 @@ header {
         nav {
           a {
             margin: 0 20px;
-            font-weight: 450;
+            font-weight: 440;
             text-decoration: none;
             letter-spacing: 1px;
-            text-transform: lowercase;
+            // text-transform: lowercase;
             font-size: 0.9rem;
             color: $black;
             &:last-child {
@@ -117,6 +102,22 @@ header {
             }
           }
           a:hover {
+            color:$peach;
+          }
+
+          button {
+            margin: 0 20px;
+            font-weight: 440;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            color: $black;
+            background: none;
+            border: none;
+            cursor: pointer;
+            outline: inherit;
+          }
+          button:hover{
             color:$peach;
           }
         }
@@ -148,17 +149,18 @@ header {
   }
   .sidebar-links li {
     opacity: 0;
+    list-style-type: none;
   }
   .sidebar-links li a {
     display: block;
     text-align: center;
-    text-transform: capitalize;
-    color: $black;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: $darkgrey;
     letter-spacing: 1.5px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
     transition: all 0.3s linear;
-    border-radius: 0.25rem;
   }
   .sidebar-links li a:hover {
     background: transparent;
@@ -166,7 +168,7 @@ header {
   }
   .close-btn {
     position: absolute;
-    right: 4.75%;
+    right: 4.65%;
     top: 2.75%;
     font-size: 2.5rem;
     outline: none;
@@ -223,9 +225,9 @@ header {
   .sidebar-icons li:nth-of-type(3) {
     animation-delay: 0.75s;
   }
-  // .sidebar-icons li:nth-of-type(4) {
-  //   animation-delay: 1s;
-  // }
+  .sidebar-icons li:nth-of-type(4) {
+    animation-delay: 1s;
+  }
   // .sidebar-icons li:nth-of-type(5) {
   //   animation-delay: 1.25s;
   // }
@@ -257,7 +259,7 @@ header {
         left: 20%;
         font-size: 7vmin;
         letter-spacing: 1px;
-        font-weight: 700;
+        font-weight: 650;
         color: $black;
         text-align: left;
         z-index: 9;
@@ -366,7 +368,7 @@ header {
           width: 50vmin;
           top: 0;
           right: 0;
-          // box-shadow: 0px 0px 21px -5px #000000;
+          // box-shadow: 0px 0px 21px -10px #000000;
           border-radius: 20px;
         }
         .top-right img{
