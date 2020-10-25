@@ -1,30 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
+// import scrollTo from 'gatsby-plugin-smoothscroll';
+
 const data = [
   {
     id: 1,
     text: "home",
+    // url: "/",
     url: "/",
   },
   {
     id: 2,
-    text: "projects",
-    url: "/projects/",
+    text: "about",
+    // url: "/about/",
+    url: "/#about",
   },
   {
     id: 3,
-    text: "contact",
-    url: "/contact/",
+    text: "projects",
+    url: "/projects/",
   },
   // {
   //   id: 4,
-  //   text: "blog",
-  //   url: "/blog/",
+  //   text: "contact",
+  //   url: "/contact/",
   // },
   // {
   //   id: 5,
-  //   text: "contact",
-  //   url: "/contact/",
+  // text: "blog",
+  // url: "/blog/",
   // },
 ]
 

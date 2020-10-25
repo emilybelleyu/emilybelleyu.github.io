@@ -11,7 +11,7 @@ const Banner = () => {
             Welcome to my personal website. As a programmer, I aim to create products that inform, support, or entertain others.
           </div>
           <div className="btn-row">
-            <Link to="/work">View my work</Link>
+            <Link to="/projects">View my work</Link>
           </div>
         </div>
         <div className="scroll">

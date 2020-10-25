@@ -45,7 +45,9 @@ const Footer = () => {
               <img src={facebook} height="40" alt="Facebook" />
             </a>
           </div>
-          <span>emilyyu331@gmail.com</span>
+          <div className="myemail">
+            <a href="mailto:emilyyu331@gmail.com" target="_blank" rel="noopener noreferrer">emilyyu331@gmail.com</a>
+          </div>
         </div>
       </div>
     </footer>

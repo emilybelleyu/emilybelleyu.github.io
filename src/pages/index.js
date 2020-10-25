@@ -18,10 +18,8 @@ const IndexPage = () => (
       <link rel="canonical" href="https://emilybelleyu.github.io/Portfolio/" />
     </Helmet>
     <Layout>
-    {/* <Header /> */}
     <Banner />
     <AboutBlurb />
-    {/* <Footer /> */}
     </Layout>
   </div>
 )
