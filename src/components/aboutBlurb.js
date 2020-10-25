@@ -8,7 +8,7 @@ const AboutBlurb = () => {
     query {
       me: file(relativePath: { eq: "em.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, quality: 100) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }

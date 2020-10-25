@@ -540,6 +540,10 @@ header {
     flex-flow: wrap;
     align-items: center;
     left: 8%;
+    @media screen and (max-width: 620px) {
+        width: 100%;
+        padding: 20px;
+    }
 
     .blog{
       display: block;
@@ -551,6 +555,12 @@ header {
       box-shadow: $light-shadow;
       transition: $transition;
       width: 25%;
+      @media screen and (max-width: 1000px) {
+          width: 40%;
+        }
+      @media screen and (max-width: 620px) {
+          width: 80%;
+        }
     }
     .blog:hover {
       box-shadow: $dark-shadow;
@@ -576,18 +586,27 @@ header {
       height: 200px;
       overflow: hidden;
       padding: 1.5rem 1rem;
+      @media screen and (max-width: 1200px) {
+        overflow: scroll;
+      }
     }
     .blog-card h4 {
       color: $black;
       font-size: 2.5vmin;
       letter-spacing: 1px;
       font-weight: 550;
+      @media screen and (max-width: 620px) {
+        font-size: 4vmin;
+      }
     }
     .blog-card p {
       margin-top: 10px;
       font-size: 1.5vmin;
       font-weight: 400;
       color: $darkgrey;
+      @media screen and (max-width: 620px) {
+        font-size: 2.3vmin;
+      }
     }
     .blog-footer {
       margin-top: 8px;
@@ -602,6 +621,9 @@ header {
       font-weight: 400;
       color: $salmon;
       margin-right: 10px;
+      @media screen and (max-width: 620px) {
+        font-size: 3vmin;
+      }
     }
     // .blog-footer p:first-of-type {
     //   display: inline-block;

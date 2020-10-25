@@ -9,35 +9,35 @@ const Projects= () => {
     query {
       mobileapp: file(relativePath: { eq: "mobileapp.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, quality: 100) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
       }
         ces: file(relativePath: { eq: "ces.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, quality: 100) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       castway: file(relativePath: { eq: "castway.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, quality: 100) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      fruityfriends: file(relativePath: { eq: "fruityfriends.png" }) {
+      fruity: file(relativePath: { eq: "fruity.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, quality: 100) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       portfolio: file(relativePath: { eq: "portfolio.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300, quality: 100) {
+          fluid(maxWidth: 700, quality: 90) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -98,7 +98,7 @@ const Projects= () => {
 
          <div className="blog">
              <article>
-                 <Img fluid={data.fruityfriends.childImageSharp.fluid} className="blog-img"/>
+                <Img fluid={data.fruity.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
                 <h4>Fruity Friends</h4>
@@ -118,7 +118,7 @@ const Projects= () => {
              </article>
             <div className="blog-card">
                 <h4>Emily Yu's Portfolio</h4>
-                <p>Programmed with Gatsby.js, SCSS, and Yarn, it serves as a medium for my own creative 
+                <p>A responsive web application programmed with Gatsby.js, SCSS, and Yarn, it serves as a medium for my own creative 
                   design and a platform to feature my past projects. Coincidentally, it is the website you are on.</p>
                 <div className="blog-footer">
                     <a href="https://github.com/emilybelleyu/Portfolio" target="_blank" rel="noopener noreferrer">View Github</a>
