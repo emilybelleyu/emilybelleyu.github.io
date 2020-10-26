@@ -68,7 +68,7 @@ const Projects= () => {
                  <Img fluid={data.ces.childImageSharp.fluid} className="blog-img"/>
              </article>
             <div className="blog-card">
-                <h4>AHS Content Editing System</h4>
+                <h4>Content Editing System</h4>
                 <p>A web application created as the content editing system for the Arcadia High Mobile app. 
                   Uses Google’s Firebase API for backend and HTML, CSS, Javascript for frontend. Specifically, it
                   uses Firebase’s hosting, authentication, database, and cloud messaging services to deploy the website, 
