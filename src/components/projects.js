@@ -69,7 +69,7 @@ const Projects= () => {
              </article>
             <div className="blog-card">
                 <h4>Content Editing System</h4>
-                <p>A web application created as the content editing system for the Arcadia High Mobile app. 
+                <p>A CRUD web application created as the content editing system for the Arcadia High Mobile app. 
                   Uses Google’s Firebase API for backend and HTML, CSS, Javascript for frontend. Specifically, it
                   uses Firebase’s hosting, authentication, database, and cloud messaging services to deploy the website, 
                   authenticate content editors, populate the article feed, and send notifications to mobile app users.</p>
