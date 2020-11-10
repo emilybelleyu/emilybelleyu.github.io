@@ -107,7 +107,7 @@ const Projects= () => {
                   & Science (COSMOS) '19 within the Game Design and Development cluster.</p>
                 <div className="blog-footer">
                     {/* <a href="https://github.com/AHSAppDevTeam/AHS2020app" target="_blank" rel="noopener noreferrer">View Github</a> */}
-                    <a href="https://play.unity.com/mg/other/untitled-6300" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href="https://play.unity.com/mg/other/fruity-friends" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
          </div>
