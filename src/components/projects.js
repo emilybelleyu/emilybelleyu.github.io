@@ -91,7 +91,7 @@ const Projects= () => {
                   Coded under the guidance of Michael Lorton, an ex-Google staff engineer.</p>
                 <div className="blog-footer">
                     <a href="https://github.com/pocket-coders/castway-client" target="_blank" rel="noopener noreferrer">View Github</a>
-                    <a href="https://castway.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+                    <a href="https://www.youtube.com/watch?v=RRO1xZRwhhQ" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
          </div>
